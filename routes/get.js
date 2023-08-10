@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/cars", (req, res) => {
-  res.send({ stats: 1, cars: req.cars });
+  res.send({ status: 1, cars: req.cars });
 });
 
 router.get("/car/:id", (req, res) => {
